@@ -1,0 +1,346 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width: 1170px;
+	margin:auto;
+}
+header{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../src/indexBG.jpg);
+	height: 100vh;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.logo{
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-top: 9px;
+}
+.nav-area li{
+	display: inline-block;
+}
+.nav-area li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family:poppins;
+	font-size: 14px;
+}
+.nav-area li a:hover{
+	background: #fff;
+	color: #333;
+}
+.logo img{
+	width: 200px;
+	float: left;
+	height: auto;
+}
+.welcome-text{
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h2{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-family: Monaco;
+}
+.welcome-text a:hover{
+	background: #fff;
+	color: #333;
+}
+.welcome-text p{
+	color: white;
+}
+
+/*registration css*/
+.loginbody {
+	background: url(../src/BGlogin.gif);
+	background-size: cover;
+	font-family: Papyrus;
+}
+
+.registration-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	
+}
+
+.registration-form h1 {
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 40px 0;
+	color: white;
+}
+
+.registration-form p {
+	font-size: 20px;
+	margin: 15px 0;
+	color: white;
+}
+
+.registration-form input {
+	font-size: 16px;
+	padding: 15px 10px;
+	width: 100%;
+	border: 0;
+	border-radius: 5px;
+	outline: none;
+}
+
+.registration-form button {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0;
+	padding: 10px 15px;
+	width: 50%;
+	border: 0;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+}
+
+.registration-form button:hover {
+	color: orange;
+}
+
+/*product css*/
+.productsbody {
+	margin: 0;
+	font-family: sans-serif;
+	background: url(../src/BGproduct.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
+	padding-top: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+}
+
+.content {
+	width: 30%;
+	margin: 15px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	padding-top: 10px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+	0 10px 10px rgba(0,0,0,0.22);
+	transition: .4s;
+	background: #f2f2f2;
+}
+
+.content:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+	0 3px 6px rgba(0,0,0,0.23);
+	transform: translate(0px, -8px);
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+p {
+	text-align: center;
+	color: black;
+	padding-top: 0 8px;
+}
+
+h6 {
+	font-size: 26px;
+	text-align: center;
+	color: #222f3e;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+li {
+	padding: 5px;
+}
+
+.fa {
+	font-size: 26px;
+	transition: .4s;
+	
+}
+
+.checked {
+	color: #ff9f43;
+}
+
+.fa:hover {
+	transform: scale(1.3);
+	transition: .6s;
+}
+
+button {
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	width: 100%;
+	padding: 15px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	margin-top: 5px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.buy-1 {
+	background: #2183a2;
+}
+
+.buy-2 {
+	background: #3b3e6e;
+}
+
+.buy-3 {
+	background: #0b0b0b;
+}
+
+.buy-4 {
+	background: #ff9f43;
+}
+
+.buy-5 {
+	background: grey;
+}
+
+.buy-6 {
+	background: #00008B;
+}
+@media(max-width: 1000px) {
+	.content{
+		width: 45%;
+	}
+}
+
+@media(max-width:750px) {
+	.content{
+		width: 100%;
+	}
+}
+
+.content ul {
+	color: black;
+}
+
+/*reference css*/
+.reference-body{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../src/indexBG.jpg);
+	height: 100vh;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-position: center center;
+	position: relative;
+}
+
+.timeline{
+	position: relative;
+	max-width: 1200px;
+	margin: 100px auto;
+}
+
+.container{
+	position: relative;
+	width: 41.7%;
+	background: rgba(0,0,0,0.3);
+}
+
+.text-box{
+	padding: 20px 30px;
+	background: #fff;
+	position: relative;
+	border-radius: 6px;
+	font-size: 15px;
+}
+
+.left-container{
+	left: 0;
+}
+
+.right-container{
+	left: 50%;
+}
+
+.reference-body h2{
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 40px 0;
+	color: white;
+}
+
+@media screen and (max-width: 600px){
+	
+	.timeline{
+		margin: 50px auto;
+	}
+	.timeline::after{
+		left: 31px;
+	}
+	.container{
+		width: 100%;
+		padding-left: 80px;
+		padding-right: 25px;
+	}
+	.text-box{
+		font-size: 13px;
+	}
+	.text-box small{
+		margin-bottom: 10px;
+	}
+	.right-container{
+		left: 0;
+	}
+	
+}
